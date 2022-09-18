@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kole Davis HW1</title>
+    <title>Kole Davis CS 332</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function change_color()
+        {
+            var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = "#" + randomColor;
+        }
+    </script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header id="text">
+        <h1>Kole's HW1 Submission</h1>
+    </header>
+
+    <div class="description">
+        <p id="target">
+            I hope to gain a <strong id="target">heightened knowledge</strong> of how
+            to <em>create web pages</em> and apps from this course!
+        </p>
+        <br>
+        <p>
+            Also here is a car.
+        </p>
+    </div>
+    
+    <div class="mclaren-things">
+        <img class="banner-image" src="../McLarenSenna.webp" alt="mclaren senna">
+    
+        <audio class="audio-thingy" id="youtube" src="../Novitec McLaren Senna Exhaust.mp3" autoplay controls loop>Your browser does not support the audio embed feature</audio>
+    </div>
+
+    <button id="button" class="button-thingy" onclick="change_color()">Click button for the cool to happen</button>
+
+    <img src="https://images.newscientist.com/wp-content/uploads/2020/05/18164813/spacecow_2.jpg" alt="i yearn">
+    <p class="cow-text">I yearn</p>
+
 </body>
 </html>
